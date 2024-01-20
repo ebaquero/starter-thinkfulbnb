@@ -253,18 +253,26 @@ footer p {
     justify-content: space-between;
   }
 
-  .host-group,
-  .host-list {
-    width: 48%;
+  .host-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .host-group .item {
+    width: 50%;
     text-align: left;
   }
 
   .host-list ul {
     padding-left: 20px;
+    text-align: left;
   }
 
   .host-img {
-    width: 48%;
+    width: 50%;
     max-width: 100%;
   }
 }
